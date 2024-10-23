@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h2>Login to Your Bank Account</h2>
+        <form id="login-form">
+            <input type="text" id="login-acno" placeholder="Account Number" required><br>
+            <input type="password" id="login-password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <button id="create-account-btn">Create New Account</button>
+    </div>
+
+    <div id="create-account-container" class="container">
+        <h2>Create New Account</h2>
+        <form id="create-account-form">
+            <input type="text" id="acno" placeholder="Account Number" required><br>
+            <input type="text" id="name" placeholder="Username" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+
+    <div id="dashboard-container" class="container">
+        <h2>Bank Account Dashboard</h2>
+        <p id="account-info"></p>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <button id="deposit-btn">Deposit</button>
+        <button id="withdraw-btn">Withdraw</button>
+        <button id="balance-enquiry-btn">Balance Enquiry</button>
+        <button id="logout-btn">Logout</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
